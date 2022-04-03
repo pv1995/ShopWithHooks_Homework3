@@ -23,12 +23,10 @@ function App() {
     setPages(count);
     setProduct(x);
   }
+  
   useEffect(() => {
     getProducts();
-  }, []);
-
-  useEffect(() => {
-    getProducts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pagination]);
 
   async function _addProduct(prod_name, prod_value) {

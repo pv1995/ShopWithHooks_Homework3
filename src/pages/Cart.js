@@ -16,8 +16,11 @@ const Cart = ({ cart, removeProduct }) => {
   return (
     <div className="m-4">
       <div className="mb-2">
-        <h4 className="my-2">Total cart value : {getCost()}</h4>
-        <Card products={cart} removeProduct={removeProduct}></Card>
+        <h4 className="text-center my-2">Total cart value : {getCost()}</h4>
+        <hr></hr>
+        <div className="scroll-view">
+          <Card products={cart} removeProduct={removeProduct}></Card>
+        </div>
       </div>
     </div>
   );

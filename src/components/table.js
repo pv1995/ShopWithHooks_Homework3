@@ -41,7 +41,7 @@ const Table = ({
 
   return (
     <div className="mx-4">
-      <table className="table table-hover table-bordered">
+      <table className="table table-sm table-hover table-bordered">
         <thead>
           <tr>
             <th scope="col">#</th>
